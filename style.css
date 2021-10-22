@@ -1,0 +1,103 @@
+/* common */
+body {
+  background: wheat;
+  user-select: none;
+}
+.hidden2 {
+  display: none;
+}
+/* modal */
+section {
+  background: #fff;
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+section h1 {
+  margin: 5px;
+}
+section p {
+  margin: 0;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+section span {
+  font-size: 50px;
+}
+.button {
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 30px auto;
+  cursor: url(hammer.png), auto;
+}
+/* header */
+header {
+  display: flex;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 18px;
+}
+header h2 {
+  margin: 0;
+}
+header .score {
+  margin: 0 0 0 auto;
+}
+/* main */
+.main {
+  width: 530px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: url(hammer.png), auto;
+}
+table {
+  margin: 0 auto;
+}
+table td {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+.visible {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  background: pink;
+}
+.visible2 {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  background: #6091d3;
+}
+.visible3 {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  background: #222324;
+}
+.visible:hover,
+.visible2:hover,
+.visible3:hover {
+  opacity: 0.5;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
