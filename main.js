@@ -64,7 +64,7 @@ function mainLoop() {
       clearInterval(shwoPanel);
       time.textContent = "RETRY";
       time.style =
-        "background: rgba(0, 0, 0, 0.4);color:black;width: 300px;border-radius: 8px;";
+        "background: rgba(0, 0, 0, 0.4);color:black;width: 200px;border-radius: 8px;";
       time.addEventListener("click", () => {
         document.location.reload();
       });
