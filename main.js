@@ -23,7 +23,7 @@ function init() {
       td.id = id;
       id++;
       // パネルをクリックした時の処理
-      td.addEventListener("click", (e) => {
+      td.addEventListener("click", () => {
         if (td.className === "visible") {
           td.setAttribute("class", "hidden");
           score += 2;
